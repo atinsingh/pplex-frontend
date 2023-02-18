@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learning';
+  name= 'Margie'
+  searchCounter= 0;
+
+
+  getName() {
+    return this.name;
+  }
+  updateCount(cnt:any){
+    this.searchCounter = cnt
+    console.log(`Value of count in App Compont is ${cnt}`)
+  }
 }
