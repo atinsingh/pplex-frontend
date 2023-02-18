@@ -1,0 +1,13 @@
+<div class="container-fuild p-4">
+    <div class="row">
+        <div class="d-flex">
+        <div *ngFor="let moview of moviews" class="card p-2" style="width: 18rem;">
+            <img src={{moview.poster}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ moview.movieName}}</h5>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
